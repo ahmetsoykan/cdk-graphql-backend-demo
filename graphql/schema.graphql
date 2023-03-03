@@ -1,0 +1,28 @@
+
+schema {
+    query: Query
+    mutation: Mutation
+}
+
+type Query {
+  getNotes(limit: Int, nextToken: String): Notes!
+}
+
+type Mutation {
+  createNote(note: NoteInput!): Note
+  deleteNote(id: String!): Note
+}
+
+type Note {
+  id: String!
+  detail: String!
+}
+
+type Notes {
+  items: [Note!]
+  nextToken: String
+}
+
+input NoteInput {
+  detail: String!
+}
