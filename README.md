@@ -1,4 +1,4 @@
-# cdk-graphql-codeless-crud-demo
+# cdk-graphql-backend-demo
 
 desc: sample crud app without lambda code. request and response mapping templates are custom ones. the unit test are based on sdk with those templates.
 
